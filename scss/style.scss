@@ -1,3 +1,6 @@
+@import "btnConfig";
+@import "utilities";
+@import "config";
 
 * {
   box-sizing: border-box;
@@ -12,14 +15,27 @@ body {
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 555%;
 }
 
 a {
   text-decoration: none;
+  
+}
+ul {
+  display: flex;
 }
 
-.hero {
+.navButton {
+  padding-right: 10px;
+  padding-left: 10px;
+  list-style-type: none;
+  border-color: blue($color: #4100f5)
+}
+  .hero {
+    @include set-bg($primary-color);
+    height: 600px;
+  
   // This is where the bulk of the SCSS styling needs to be done
 
   // Take a look at the other files we've built already. How can they be useful here?
